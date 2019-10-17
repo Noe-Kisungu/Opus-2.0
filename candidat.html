@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>formulaire inscription</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset class="identifiant">
+      <legend>Identifiant</legend>
+      <label>Etes-vous demandeur d'emploi </label>
+      <input type="radio" name="emploi" value="oui" id="oui"/>
+      <label for="oui">oui</label>
+      <input type="radio" name="emploi" value="non" id="non"/>
+      <label for="non">non</label><br />
+      <label>Identifiant Pôle Emploi</label>
+      <input id="Identifiant" name="Identifiant" type="text" />
+    </fieldset>
+    <fieldset class="etat-civil">
+      <legend>Etat civil</legend>
+      <label for="nom">Nom</label>
+      <input id="nom" name="nom" type="text" /><br />
+      <label for="prenom">Prénom </label>
+      <input id="prenom" name="prenom" type="text" /><br />
+      <label for="date-de-naissance">Date de naissance</label>
+      <input id="date-de-naissance" name="date-de-naissance" type="text" />
+    </fieldset>
+    <fieldset class="adresse">
+      <legend>Adresse</legend>
+      <label>Rue</label>
+      <input id="rue" name="rue" type="text" /><br />
+      <label>Code postal</label>
+      <input id="code-postal" name="code-postal" type="text" /><br />
+      <label>Ville</label>
+      <input id="ville" name="ville" type="text" />
+    </fieldset>
+    <fieldset class="Diplômes">
+      <legend>Diplômes</legend>
+      <label>Indiquez votre parcours scolaire</label>
+      <textarea name="Cursus scolaire" id="Scolarity" style="width:300px; height:100px;"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Expériences professionnelles</legend>
+      <label>Indiquez votre expérience professionnelle</label>
+      <textarea name="Expériences professionnelles" id="professional" style="width:300px; height:100px;"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Formation</legend>
+      <label>Choisissez votre formation</label>
+      <select name="Formation" id="Formation">
+        <optgroup label="Formations Longues">
+          <optgroup label="Numérique"></optgroup>
+          <option value="Développement">Développement Web & Web Mobile</option>
+          <option value="Conception">Concepteur Développeur d'application</option>
+          <optgroup label="Animation"></optgroup>
+          <option value="BPJEPS">Brevet professionnel de la Jeunesse, de l'Education Populaire et du Sport</option>
+          <option value="BAFA">Brevet d'aptitude aux fonctions d'animateur</option>
+          <optgroup label="Espaces Verts & Agricultures"></optgroup>
+          <option value="Maraîchages">Responsable d'entreprise agricoles et Marâichages biologiques</option>
+          <option value="Arboristes">Certificat de spécialisation arboristes & Elagueur</option>
+          <!-- <optgroup label="Bâtiment"></optgroup>
+          <option value="!!">!!</option>
+          <option value="!!">!!</option>  Terminer les intitulés-->
+          <optgroup label="Formations Courtes">
+            <optgroup label="Numérique"></optgroup>
+            <option value="GIT GITHUB">Versionner et collaborer avec Git et Github</option>
+            <option value="Wordpress">Créer son site Internet avec Wordpress</option>
+            <optgroup label="Animation"></optgroup>
+            <option value="CQP">CQP Animateur Périscolaire</option>
+            <option value="BAFD">Brevet d'aptitude aux fonctions de Directeur</option>
+            <optgroup label="Espaces Verts & Agricultures"></optgroup>
+            <option value="Paysagistes">CAP Agricoles Jardiniers Paysagistes</option>
+            <option value="Apiculteurs">Apiculteurs</option>
+            <!-- <optgroup label="Bâtiment"></optgroup>
+            <option value="!!">!!</option>
+            <option value="!!">!!</option>  Terminer les intitulés-->
+          </select>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+      </form>
+    </body>
+    </html>
